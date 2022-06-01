@@ -1,0 +1,24 @@
+.Card{
+    height: auto;
+    background-color:  var(--work);
+    border-radius: 10px;
+}
+
+.Work{
+    background-color:  var(--work);
+}
+.Play{
+    background-color:  var(--play);
+}
+.Study{
+    background-color:  var(--study);
+}
+.Exercise{
+    background-color:  var(--exercise);
+}
+.Social{
+    background-color:  var(--social);
+}
+.Self-Care{
+    background-color:  var(--self-care);
+}

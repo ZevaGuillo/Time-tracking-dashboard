@@ -1,0 +1,5 @@
+.UserCard{
+    background-color: aquamarine;
+    border-radius: 10px;
+    grid-row: 1/3;
+}

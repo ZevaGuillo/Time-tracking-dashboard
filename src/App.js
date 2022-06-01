@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Card from "./components/Card/Card";
+import UserCard from "./components/UserCard/UserCard";
+import data from "./data.json";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App(){
+    const [timeView, setTimeView] = React.useState(''); 
+
+    const generateGridCard = ()=>{
+        let userCard = [<UserCard key='Jeremy'/>];
+
+        let dataCards = data.map((d,index) => {
+            return <Card data={d} key={index+d.title} />
+        })
+        return userCard.concat(dataCards);
+    }
+
+    return(
+        <div className="App">
+            {generateGridCard()}
+        </div>
+    )
 }
+
 
 export default App;
