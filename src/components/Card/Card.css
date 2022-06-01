@@ -1,5 +1,4 @@
 .Card{
-    height: auto;
     background-color:  var(--work);
     border-radius: 10px;
 }

@@ -5,13 +5,13 @@ import data from "./data.json";
 
 
 function App(){
-    const [timeView, setTimeView] = React.useState(''); 
+    const [timeView, setTimeView] = React.useState('Daily'); 
 
     const generateGridCard = ()=>{
-        let userCard = [<UserCard key='Jeremy'/>];
+        let userCard = [<UserCard key='Jeremy' ChangeTimeView={(timeView)=>setTimeView(timeView)}/>];
 
         let dataCards = data.map((d,index) => {
-            return <Card data={d} key={index+d.title} />
+            return <Card data={d} key={index+d.title} timeView={timeView}/>
         })
         return userCard.concat(dataCards);
     }

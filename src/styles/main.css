@@ -7,6 +7,7 @@
 :root{
 
     /* COlors */
+    --user: hsl(246, 80%, 60%);
     --work: hsl(15, 100%, 70%);
     --play: hsl(195, 74%, 62%);
     --study: hsl(348, 100%, 68%);
@@ -18,6 +19,7 @@
     --dark-blue: hsl(235, 46%, 20%);
     --desaturated-blue: hsl(235, 45%, 61%);
     --pale-blue: hsl(236, 100%, 87%);
+    --white: hsl(236, 80%, 96%);
 
     /* Typography */
     --font-size-body: 18px;
@@ -25,6 +27,8 @@
     --font-Light : 300;
     --font-Regular : 400;
     --font-Medium : 500;
+    --border-radius: 1rem;
+    --padding-card: 1.7rem;
 
 }
 
@@ -34,7 +38,7 @@ body{
     height: 100vh;
 }
 #root{
-    margin-top: 50px;
+    padding-top: 50px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -46,7 +50,8 @@ body{
     margin-right: auto;
     margin-bottom: 50px;
     width: 90%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 1.2rem;
 }
 
@@ -59,7 +64,7 @@ body{
     .App{
         width: 75%;
         margin-bottom: 0;
+        display: grid;
         grid-template-columns: repeat(4,1fr);
-
     }
 }
