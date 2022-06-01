@@ -1,6 +1,10 @@
 .Card{
     background-color:  var(--work);
-    border-radius: 10px;
+    border-radius: 1rem 1rem 1.2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size-body);
+    color: var(--pale-blue);
 }
 
 .Work{
@@ -20,4 +24,80 @@
 }
 .Self-Care{
     background-color:  var(--self-care);
+}
+.card-nav{
+    width: 100%;
+    position: relative;
+    height: 35px;
+    overflow: hidden;
+}
+
+.card-nav img{
+    position: absolute;
+    top: -.3rem;
+    right: var(--padding-card);
+}
+
+.card-content{
+    background-color: var(--dark-blue);
+    border-radius: var(--border-radius);
+    flex-grow:1;
+    z-index: 11;
+    padding: var(--padding-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    transition: all .2s ;
+}
+
+.card-content:hover{
+    background-color: #34397b;
+}
+
+.card-content .card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-content .card-header h3{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.card-content .times{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currentHours{
+    font-weight: var(--font-Light);
+    font-size: 2rem;
+}
+.previousHours{
+    font-weight: var(--font-Light);
+    color: var(--desaturated-blue);
+    font-size: .9rem;
+}
+
+@media (min-width: 1000px){
+    .card-nav{
+        height: 20%;
+    }
+    .card-content{
+        justify-content: space-between;
+        padding: var(--padding-card);
+    }
+    .currentHours{
+        font-weight: var(--font-Light);
+        font-size: 2.7em;
+    }
+    .card-content .times{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
 }
