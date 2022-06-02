@@ -5,8 +5,8 @@ import profile from "../../images/image-jeremy.png"
 export default function UserCard(props){
 
     const [labelActive,setLabelActive] = React.useState({
-        Daily:true,
-        Weekly:false,
+        Daily:false,
+        Weekly:true,
         Monthly:false
     })
 

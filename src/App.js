@@ -5,7 +5,7 @@ import data from "./data.json";
 
 
 function App(){
-    const [timeView, setTimeView] = React.useState('Daily'); 
+    const [timeView, setTimeView] = React.useState('Weekly'); 
 
     const generateGridCard = ()=>{
         let userCard = [<UserCard key='Jeremy' ChangeTimeView={(timeView)=>setTimeView(timeView)}/>];

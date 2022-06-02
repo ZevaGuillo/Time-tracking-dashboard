@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     font-size: var(--font-size-body);
-    color: var(--pale-blue);
+    color: var(--white);
 }
 
 .Work{
@@ -61,9 +61,9 @@
     justify-content: space-between;
 }
 
-.card-content .card-header h3{
+.card-content .card-header h2{
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .card-content .times{
@@ -78,7 +78,7 @@
 }
 .previousHours{
     font-weight: var(--font-Light);
-    color: var(--desaturated-blue);
+    color: var(--pale-blue);
     font-size: .9rem;
 }
 
@@ -92,12 +92,13 @@
     }
     .currentHours{
         font-weight: var(--font-Light);
-        font-size: 2.7em;
+        font-size: 3em;
     }
     .card-content .times{
         flex-direction: column;
         align-items: flex-start;
         flex-grow: 1;
-        justify-content: space-around;
+        justify-content: flex-end;
+        gap: .6rem;
     }
 }
