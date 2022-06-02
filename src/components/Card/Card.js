@@ -19,11 +19,11 @@ export default function Card(props){
         <div className={classCSS}>
             <div className="card-nav">
                 
-                <img src={getIcon(props.data.title)}/>
+                <img src={getIcon(props.data.title)} alt={props.data.title}/>
             </div>
             <div className="card-content">
                 <div className="card-header">
-                    <h3>{props.data.title}</h3>
+                    <h2>{props.data.title}</h2>
                     <img src={ellipsis} alt='ellipsis'/>
                 </div>
                 <div className="times">
